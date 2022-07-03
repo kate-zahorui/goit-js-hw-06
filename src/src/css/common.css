@@ -29,6 +29,8 @@ img {
 	height: auto;
 }
 
+/* Task 3 */
+
 .gallery {
 	display: flex;
 	margin: -15px;
@@ -39,4 +41,18 @@ img {
 .gallery__item {
 	flex-basis: calc(100% / 3 - 30px);
 	margin: 15px;
+}
+
+/* Task 6 */
+
+#validation-input {
+	border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+	border-color: #4caf50;
+}
+
+#validation-input.invalid {
+	border-color: #f44336;
 }
