@@ -4,14 +4,13 @@ const onFormSubmit = function (event) {
 	event.preventDefault();
 	const { email, password } = formRef.elements;
 
-	const formValues = {
-		email: `${email.value}`,
-		password: `${password.value}`,
-	};
-	if (formValues.email === "" || formValues.password === "") {
+	if (email.value === "" || password.value === "") {
 		alert("Всі поля повинні бути заповнені!");
 	} else {
-		console.log(formValues);
+		console.log({
+			email: `${email.value}`,
+			password: `${password.value}`,
+		});
 		event.currentTarget.reset();
 	}
 };
